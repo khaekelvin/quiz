@@ -1,50 +1,17 @@
-function CreditYear(){  //declare function
-let credits = prompt(parseInt(("How many credits?")));  //ask for credits
-let year;//declare year
+function creditYear(){
+let credits = parseInt(prompt("How many Credits?"));
 
 if (credits <= 23){
-    year= "freshman";  //23 or less
+    console.log("you are a freshman");
+} else if (credits >24 && credits < 53){
+    console.log("you are a sophomore");
+} else if (credits >= 54 && credits <= 83){
+    console.log("you are junior ");
+} else if(credits >= 84){
+    console.log("You're senior!");
+} else {
+    console.log("Enter a valid input")
+}
 }
 
-else if (credits > 24 && credits < 53 ){
-    year="sophomore";  //between 24 and 53
-}
-
-else if (credits > 53 && credits < 83){
-    year ="junior";  //between 53 and 83
-}
-
-else {
-    year = "senior";  // credits > 84 and over
-}
-
-console.log("you are a " + year)  //print year
-}
-
-CreditYear();  //call function
-
-
-
-/*let credits = prompt(parseInt(("How many credits?")));//ask for credits
-let year;//declare year
-
-if (credits <= 23){
-    year= "freshman";//23 or less
-}
-
-else if (credits > 24 && credits < 53 ){
-    year="sophomore" ;//between 24 and 53
-}
-
-else if (credits > 53 && credits < 83){
-    year ="junior ";//between 53 and 83
-}
-
-else {
-    year = "senior";// credits > 84 and over
-}
-
-console.log("you are a " + year)//print year
-*/
-
-
+creditYear();
