@@ -6,7 +6,7 @@ function quiz(){  //quiz function
     let correctAnswers = 0; //declared number of correct answers
 
     for(i = 0; i < 4; i++){
-        const random = Math.floor(Math.random() * questions.length); //Math.random() * question.length returns a random integer from 0 to 9 since the length of question is 10.
+        const random = Math.floor(Math.random() * questions.length); //Math.random() * question.length returns a random integer from 0 to 10 since the length of question is 10.
         const yourAnswer = prompt(questions[random]); //creates an object for your answers and asks the user a random question with the random object.
 
         if(yourAnswer == answers[random]){
